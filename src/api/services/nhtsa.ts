@@ -2,11 +2,11 @@ import { safeRequest } from "../../utils/helpers/api/safeRequest";
 import {
   DecodeResponseSchema,
   type TDecodeResponse,
-} from "../../schemas/vin/decode.schema";
+} from "../../schemas/vin/decode";
 import { axiosClient } from "../axiosClient";
-import { buildQueryParams } from "../../utils/searchParams/buildQueryParams";
-import { VariablesResponseSchema, type TVariablesResponse } from "../../schemas/variables/variables.schema";
-import { VariableValuesResponseSchema, type TVariableValuesResponse } from "../../schemas/variables/variableValues.schema";
+import { buildQueryParams } from "../../utils/helpers/searchParams/buildQueryParams";
+import { VariablesResponseSchema, type TVariablesResponse } from "../../schemas/variables/variables";
+import { VariableValuesResponseSchema, type TVariableValuesResponse } from "../../schemas/variables/variableValues";
 
 export interface IDecodeQueryParams {
   modelyear?: number;

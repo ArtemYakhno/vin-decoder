@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import {
   useVariables,
   useVariableValues,
-} from "../../../queries/variables/variables.queries";
+} from "../../../queries/variables/queries";
 import styles from "./VariableDetailesPage.module.scss";
 import { VariableMeta } from "../../blocks/Variable/VariableMeta/VariableMeta";
 import { Back } from "../../ui/Back/Back";

@@ -1,4 +1,4 @@
-import { useVinHistoryStore, type IHistoryItem } from "../../../../stores/vinHistory.store";
+import { useVinHistoryStore, type IHistoryItem } from "../../../../stores/vinHistory";
 import styles from "./VinHistory.module.scss";
 
 interface Props {

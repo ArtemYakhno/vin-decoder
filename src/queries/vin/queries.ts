@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
-import { vinKeys } from './vin.keys';
-import { NHTSAServices } from '../../api/services/NHTSA.services';
-import type { TDecodeResponse } from '../../schemas/vin/decode.schema';
+import { vinKeys } from './keys';
+import { NHTSAServices } from '../../api/services/nhtsa';
+import type { TDecodeResponse } from '../../schemas/vin/decode';
 
 export const useDecodeVin = (vin: string, modelyear?: number) =>
   useQuery<TDecodeResponse>({

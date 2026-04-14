@@ -1,5 +1,5 @@
 import type { UseFormReturn } from "react-hook-form";
-import type { TVinFormValues } from "../../../../schemas/vin/vinForm.schema";
+import type { TVinFormValues } from "../../../../schemas/vin/vinForm";
 import styles from "./VinForm.module.scss";
 import clsx from "clsx";
 

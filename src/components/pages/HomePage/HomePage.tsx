@@ -4,10 +4,10 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import {
   vinFormSchema,
   type TVinFormValues,
-} from "../../../schemas/vin/vinForm.schema";
+} from "../../../schemas/vin/vinForm";
 import { VinForm } from "../../blocks/Vin/VinForm/VinForm";
 import { VinHistory } from "../../blocks/Vin/VinHistory/VinHistory";
-import { useDecodeVin } from "../../../queries/vin/vin.queries";
+import { useDecodeVin } from "../../../queries/vin/queries";
 import { normalizeVinData } from "../../../utils/normalizers/normalizeVinData";
 import { VinResults } from "../../blocks/Vin/VinResult/VinResults";
 import { VinErrorBanner } from "../../blocks/Vin/VinErrorBanner/VinErrorBanner";
@@ -15,7 +15,7 @@ import styles from "./HomePage.module.scss";
 import {
   useVinHistoryStore,
   type IHistoryItem,
-} from "../../../stores/vinHistory.store";
+} from "../../../stores/vinHistory";
 import { VinInfoBanner } from "../../blocks/Vin/VinInfoBanner/VinInfoBanner";
 
 export const HomePage = () => {

@@ -1,8 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
-import { NHTSAServices } from "../../api/services/NHTSA.services";
-import { variablesKeys } from "./variables.keys";
-import type { TVariablesResponse } from "../../schemas/variables/variables.schema";
-import type { TVariableValuesResponse } from "../../schemas/variables/variableValues.schema";
+import { NHTSAServices } from "../../api/services/nhtsa";
+import { variablesKeys } from "./keys";
+import type { TVariablesResponse } from "../../schemas/variables/variables";
+import type { TVariableValuesResponse } from "../../schemas/variables/variableValues";
 
 export const useVariables = () =>
   useQuery<TVariablesResponse>({

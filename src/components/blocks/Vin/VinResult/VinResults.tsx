@@ -1,4 +1,4 @@
-import type { TDecodeItem } from "../../../../schemas/vin/decode.schema";
+import type { TDecodeItem } from "../../../../schemas/vin/decode";
 import styles from "./VinResults.module.scss";
 
 interface Props { items: TDecodeItem[]; }

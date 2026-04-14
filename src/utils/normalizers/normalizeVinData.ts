@@ -1,4 +1,4 @@
-import type { TDecodeItem } from "../../schemas/vin/decode.schema";
+import type { TDecodeItem } from "../../schemas/vin/decode";
 
 interface INormalizedVINData {
   normalizedData: TDecodeItem[];
