@@ -1,0 +1,8 @@
+.back {
+  display: flex;
+  padding: 4px;
+  align-items: center;
+  width: fit-content;
+  gap: var(--space-1);
+  cursor: pointer;
+}

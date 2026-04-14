@@ -1,0 +1,21 @@
+@use "../../../styles/base/typography" as *;
+
+.homePage {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.title{
+  @extend %h1;
+}
+
+.apiMessage {
+  @extend %body-text;
+}
+
+.resultsSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}

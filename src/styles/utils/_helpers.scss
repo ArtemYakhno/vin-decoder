@@ -1,0 +1,14 @@
+@use "./mixins" as *;
+@use "../tokens/tokens" as *;
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+
+  @include padding-inline;
+
+  @include on-desktop {
+    max-width: $desktop-min-width;
+    margin-inline: auto;
+  }
+}
