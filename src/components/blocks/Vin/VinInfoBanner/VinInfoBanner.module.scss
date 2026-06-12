@@ -1,0 +1,16 @@
+@use "../../../../styles/base/typography" as *;
+
+.banner {
+  padding: var(--space-4);
+  border: 1px solid var(--color-warning-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-warning-bg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.info {
+  @extend %body-text;
+  color: var(--color-warning);
+}

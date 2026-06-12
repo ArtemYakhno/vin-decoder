@@ -1,0 +1,74 @@
+@use "../../../styles/utils/mixins" as *;
+@use "../../../styles/base/typography" as *;
+
+.variableDetailsePage {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.title {
+  @extend %h2;
+}
+
+.descriptionSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.descriptionTitle {
+  @extend %h4;
+}
+
+.descriptionInfo {
+  @extend %body-text;
+
+  p {
+    margin-bottom: var(--space-2);
+  }
+}
+
+.state {
+  @extend %body-text;
+  text-align: center;
+}
+
+.valuesList {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.valueItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-sm);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+
+  &:last-child {
+    border-bottom: none;
+  }
+  &:nth-child(even) {
+    background: var(--color-surface-offset);
+  }
+}
+
+.valueId {
+  min-width: 32px;
+  text-align: center;
+  @extend %small-text;
+}
+
+.valueName{
+  @extend %body-text;
+}

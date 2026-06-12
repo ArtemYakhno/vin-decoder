@@ -1,0 +1,41 @@
+@use "../base/typography" as *;
+@use "../utils/mixins" as *;
+
+.button {
+  @extend %buttons;
+  background: var(--color-primary);
+  box-sizing: border-box;
+  border: none;
+  padding-block: 0;
+  padding-inline: var(--space-6);
+  color: #fff;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+
+  white-space: nowrap;
+  transition: background var(--transition);
+
+  &:hover:not(:disabled) {
+    background: var(--color-primary-hover);
+  }
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  &--height50 {
+    height: 50px;
+  }
+
+  &--height40 {
+    height: 40px;
+  }
+
+  &--height32 {
+    height: 32px;
+  }
+
+  &--height16 {
+    height: 16px;
+  }
+}

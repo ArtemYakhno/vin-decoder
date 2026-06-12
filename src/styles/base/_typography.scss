@@ -1,0 +1,86 @@
+@use "../utils/mixins" as *;
+
+%h1 {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: var(--text-xl);
+  line-height: 1.2;
+  color: var(--color-text);
+
+  @include on-desktop {
+    font-size: 48px;
+  }
+}
+
+%h2 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--color-text);
+
+  @include on-desktop {
+    font-size: 32px;
+  }
+}
+
+%h3 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--color-text);
+
+  @include on-desktop {
+    font-size: 22px;
+  }
+}
+
+%h4 {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--color-text);
+
+  @include on-desktop {
+    font-size: 20px;
+  }
+}
+
+
+%body-text {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--text-base);
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+%small-text {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+%buttons {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--text-base);
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+%inputs {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--text-base);
+  line-height: 1.5;
+  color: var(--color-text);
+
+  &::placeholder {
+    color: var(--color-text-faint);
+  }
+}

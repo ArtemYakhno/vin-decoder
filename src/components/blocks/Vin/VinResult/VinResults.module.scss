@@ -1,0 +1,44 @@
+@use "../../../../styles/base/typography" as *;
+@use "../../../../styles/utils/mixins" as *;
+
+.heading {
+  @extend %h2;
+}
+
+.list {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-1);
+
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+
+  &:last-child {
+    border-bottom: none;
+  }
+  &:nth-child(even) {
+    background: var(--color-surface-offset);
+  }
+
+  @include on-desktop {
+    grid-template-columns: minmax(160px, 40%) 1fr;
+    gap: var(--space-4);
+  }
+}
+
+.term {
+ @extend %small-text;
+}
+
+.value {
+   @extend %body-text;
+
+}
